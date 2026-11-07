@@ -173,7 +173,7 @@ clang main.c -o calculator
 **Linux Terminal (Any disro)**
 **Windows Terminal**
 **MacOS Terminal**
-**Termux88
+**Termux (ChromeOS app)**
 
 
 
