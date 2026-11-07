@@ -170,9 +170,9 @@ clang main.c -o calculator
 
 ## c-calculator supports:
 
-**Linux Terminal (Any disro)**
-**Windows Terminal**
-**MacOS Terminal**
+**Linux Terminal (Any disro),**
+**Windows Terminal,**
+**MacOS Terminal,**
 **Termux (ChromeOS app)**
 
 
