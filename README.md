@@ -1,6 +1,9 @@
 # c-calculator
 A simple calculator written in C that runs in your terminal
 
+<img width="305" height="250" alt="Screenshot-calc" src="https://github.com/user-attachments/assets/908c86f4-1c83-48c9-b446-e4b8ab11d666" />
+
+
 ## Install
 
 <details>
