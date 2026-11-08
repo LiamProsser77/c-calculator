@@ -171,6 +171,10 @@ clang main.c -o calculator
 
 **Your calculator is now running in your terminal!** 
 
+## Quit the program
+To quit your calculator press **q** and it will stop it.
+
+
 ## c-calculator supports:
 
 **Linux Terminal (Any disro),**
