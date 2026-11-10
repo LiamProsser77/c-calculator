@@ -183,4 +183,13 @@ To quit your calculator press **q** and it will stop it.
 **Termux (ChromeOS app)**
 
 
+## Features 
+
+* Can take up to as many numbers as you want at a time
+* Has +, -, *, and /. Also with many other symbols
+* 64 bit calculator
+* Created in C
+* Q to quit program
+* Tells you when there is an error
+
 
