@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Calculator Documentation</title>
+
+    <style>
+        body {
+            background: white;
+            color: black;
+            font-family: Arial, sans-serif;
+            max-width: 750px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            border-bottom: 1px solid black;
+            padding-bottom: 8px;
+        }
+
+        code, pre {
+            background: #f2f2f2;
+            color: black;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        pre {
+            overflow-x: auto;
+        }
+
+        a {
+            color: black;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        footer {
+            border-top: 1px solid black;
+            margin-top: 40px;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>C Calculator Documentation</h1>
+
+    <p>
+        A simple calculator written in C that runs in your terminal.
+    </p>
+
+    <img
+        width="305"
+        src="https://github.com/user-attachments/assets/908c86f4-1c83-48c9-b446-e4b8ab11d666"
+        alt="C Calculator screenshot"
+    >
+
+    <h2>About</h2>
+
+    <p>
+        C Calculator is a lightweight command-line calculator
+        written in the C programming language. It allows users
+        to enter mathematical expressions directly into their terminal.
+    </p>
+
+    <h2>Installation</h2>
+
+    <h3>1. Create the source file</h3>
+
+    <p>Open your terminal and create a file called main.c.</p>
+
+    <pre><code>cat > main.c <<'EOF'</code></pre>
+
+    <p>Paste the calculator source code from the repository into the file.</p>
+
+    <h3>2. Compile</h3>
+
+    <p>Compile the program using Clang:</p>
+
+    <pre><code>clang main.c -o calculator</code></pre>
+
+    <h3>3. Run</h3>
+
+    <p>Start the calculator:</p>
+
+    <pre><code>./calculator</code></pre>
+
+    <h2>Using the Calculator</h2>
+
+    <p>Enter a mathematical expression after the Math: prompt.</p>
+
+    <pre><code>Math: 2+2
+4
+
+Math: 10*5
+50
+
+Math: (10+5)*2
+30</code></pre>
+
+    <h2>Supported Operations</h2>
+
+    <ul>
+        <li>Addition (+)</li>
+        <li>Subtraction (-)</li>
+        <li>Multiplication (*)</li>
+        <li>Division (/)</li>
+        <li>Parentheses ( )</li>
+        <li>Decimal numbers</li>
+        <li>Negative numbers</li>
+    </ul>
+
+    <h2>Quitting</h2>
+
+    <p>
+        Type <code>q</code> and press Enter to close the calculator.
+    </p>
+
+    <h2>Supported Systems</h2>
+
+    <ul>
+        <li>Linux</li>
+        <li>Windows Terminal (with a C compiler)</li>
+        <li>macOS</li>
+        <li>Termux</li>
+        <li>ChromeOS Linux environment</li>
+    </ul>
+
+    <h2>Features</h2>
+
+    <ul>
+        <li>Written in C</li>
+        <li>64-bit floating-point calculations</li>
+        <li>Multiple numbers in one expression</li>
+        <li>Basic mathematical operations</li>
+        <li>Error handling</li>
+        <li>Division-by-zero detection</li>
+        <li>Simple terminal interface</li>
+        <li>Quit using Q</li>
+    </ul>
+
+    <h2>Source Code</h2>
+
+    <p>
+        The project is open source. You can find the source code
+        and installation instructions on GitHub.
+    </p>
+
+    <p>
+        <a href="https://github.com/LiamProsser77/c-calculator">
+            View C Calculator on GitHub
+        </a>
+    </p>
+
+    <footer>
+        <p>C Calculator — Written in C.</p>
+    </footer>
+
+</body>
+</html>
