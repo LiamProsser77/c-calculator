@@ -1,0 +1,26 @@
+name: Count .lsk files on GitHub
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # once a day
+  workflow_dispatch:
+
+jobs:
+  count:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Search 【entity-GitHub¦canonical_name=GitHub】 for .lsk files
+        run: |
+          COUNT=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/search/code?q=extension:lsk" | jq .total_count)
+          echo "{\"schemaVersion\":1,\"label\":\".lsk files on 【entity-GitHub¦canonical_name=GitHub】\",\"message\":\"$COUNT\",\"color\":\"blue\"}" > lsk-count.json
+          echo "COUNT=$COUNT"
+
+      - name: Upload to Gist
+        uses: andymckay gist-action@master
+        with:
+          gist_URL: https://gist.github.com/YOUR_USERNAME/YOUR_GIST_ID
+          github_token: ${{ secrets.GIST_TOKEN }}
+          gist_file_name: lsk-count.json
+          file: lsk-count.json
